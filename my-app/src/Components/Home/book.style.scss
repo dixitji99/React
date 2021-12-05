@@ -9,14 +9,15 @@
         margin-bottom: 3px;
         height: 200px;
         width: 200px;
+        border: 0px;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
         &:hover {
             cursor: pointer;
             padding: 3px 3px;
-            height: 194px;
-            width: 194px;
-            opacity: 0.6;
+            height: 200px;
+            width: 200px;
+            opacity: 0.8;
         }
     }
     label {
@@ -25,6 +26,7 @@
     button {
         background-color: rgb(27, 165, 245);
         padding: 8px 0px;
+        align-self: center;
         border: 1px solid black;
         border-radius: 4px;
         margin: 5px 5px;

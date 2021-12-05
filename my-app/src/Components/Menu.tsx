@@ -18,9 +18,9 @@ const Menu = () => {
                     <label htmlFor="appNameTitle" className="app-name">{constant.APP_NAME}</label>
                     <ul className="nav--list">
                         <li key="home"><Link to="/" className={splitLocation[1] === "" ? "nav--active" : "nav--inactive"}>Home</Link></li>
-                        <li>|</li>
+                        <li key="null1">|</li>
                         <li key="order"><Link to="/Order" className={splitLocation[1] === "Order" ? "nav--active" : "nav--inactive"}>Order</Link></li>
-                        <li>|</li>
+                        <li key="null2">|</li>
                         <li key="cart"><Link to="/Cart" className={splitLocation[1] === "Cart" ? "nav--active" : "nav--inactive"}>Cart</Link></li>
                     </ul>
                 </div>
