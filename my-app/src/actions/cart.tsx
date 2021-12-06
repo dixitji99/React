@@ -19,3 +19,15 @@ export const clearCart = () => {
         type: ActionTypes.CLEAR_CART
     }
 }
+
+export const incCount = () => {
+    return {
+        type: ActionTypes.INC_COUNT
+    }
+}
+
+export const decCount = () => {
+    return {
+        type: ActionTypes.DEC_COUNT
+    }
+}

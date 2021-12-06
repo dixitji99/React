@@ -13,7 +13,7 @@ const Cart = () => {
                             </p>
                             <div className="fc-r g-1">
                                 <button className="btn btn-primary fitem2">Edit</button>
-                                <button className="btn btn-primary fitem2">Save</button>
+                                <button className="btn btn-primary fitem2">Add</button>
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@ const Cart = () => {
                             <label htmlFor="shippingAddress" className="fitem fw-normal fs-4">Shipping Address</label>
                             <div className="fitem">
                                 <div className="card fc-r p-2 mb-3 g-1">
-                                    <img src="assets/harry1.jpg" alt="image" className="fi-c image" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCMrpoQrkQVaoAAPnn6QVyrMQEoSgpGTrog&usqp=CAU" alt="image" className="fi-c img " />
                                     <div className="fc-c fi-c">
                                         <label className="fw-bold">Book Title</label>
                                         <label>Book Author</label>

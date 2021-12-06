@@ -8,8 +8,8 @@ const OrderItems = ({ items }: PropType) => {
     return (
         <>
             {
-                items.map(item => (
-                    <div className="row" id={item.id.toString()}>
+                items?.map(item => (
+                    <div className="row" id={item.id.toString()+1}>
                         <div className="col flex-container-row">
                             <img src={item.cover_image} className="flex-item img" alt={item.title}/>
                             <div className="flex-container-column">
