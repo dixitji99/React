@@ -5,6 +5,7 @@ import Order from './Components/Order/Order';
 import Cart from './Components/Cart/Cart';
 import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router-dom';
 import AboutBook from './Components/Home/AboutBook';
+import NotFound from './Components/404/NotFound';
 
 function App() {
 

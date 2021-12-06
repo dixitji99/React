@@ -1,3 +1,9 @@
+
+.menu-label{
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+}
 .b-1{
     border: 1px solid black;
 }
@@ -8,7 +14,7 @@
 .bg-light1{
     background-color: rgb(146, 216, 146);
 }
-img{
+.img{
     height: 120px;
     width: 90px;
     margin: 5px;
@@ -18,7 +24,6 @@ img{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    gap: 20px;
 }
 .flex-container-column{
     display: flex;
