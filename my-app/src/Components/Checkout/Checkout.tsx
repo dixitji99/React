@@ -3,7 +3,7 @@ import React from 'react'
 const Checkout = () => {
     return (
         <div>
-            Checkout Works
+            Yet To be added(as it is extra functionality not required for project)
         </div>
     )
 }
