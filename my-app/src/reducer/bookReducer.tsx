@@ -10,7 +10,7 @@ export const bookReducer = (state = initialState, { type, payload }: any) => {
         case ActionTypes.GET_BOOKS:
             return state;
         case ActionTypes.SET_BOOK:
-            state.products.push(payload);
+            state={...state,products:payload}
             return state;
         default:
             return state;
