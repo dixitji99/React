@@ -1,28 +1,10 @@
 import './order.style.scss'
-import axios from 'axios';
-import { useEffect } from 'react';
-import { OrderModel } from '../../Model/OrderModel';
 import OrderDisplay from './OrderDisplay';
-import { useSelector, useDispatch } from 'react-redux';
-import { AppDispatch, RootState } from '../../reducer';
-import { setOrder } from '../../actions/orderAction';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../reducer';
 
 const Order = () => {
-    const orders=useSelector((state:RootState)=>state.order.order.flat());
-    
-    const dispatch=useDispatch<AppDispatch>();
-    
-    const fetchOrder=async ()=>{
-        const respo=await axios
-        .get("https://61a32c52014e1900176deaf4.mockapi.io/orders")
-        console.log(orders);
-        dispatch(setOrder(respo.data));
-    }
-    
-    useEffect(() => {
-        fetchOrder();
-    }, []);
-
+    const orders = useSelector((state: RootState) => state.order.order.flat());
     return (
         < div >
             {
