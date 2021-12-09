@@ -1,69 +1,84 @@
-div img{
-    height: 300px;
-    width: 248px;
-    border-radius: 3px;
-    align-self: center;
-}
-div button{
-    margin-top: 3px;
-    width: 170px;
-}
-div.card{
-    padding: 2px;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-}
-div.card:hover{
-    transition: 0.3s ease-in-out;
-}
-.col-img{
+$primarycolor: rgb(27, 150, 255);
+$secondrycolor:rgba(29, 158, 29, 0.8);
+.about-book {
+    margin: 20px 20px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-}
-.flex-center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.d-f{
-    display: flex;
-    flex-direction: column;
-}
-textarea{
-    resize: none;
-    width: 355px;
-    height: 200px;
-    word-wrap: break-word;
-    
-}
+    gap: 20px;
 
-@media screen and (max-width: 768px) {
-    
-    textarea{
-        resize: none;
-        width: 280px;
-        margin-bottom: 20px;
-    }   
-    div img{
-        height: 200px;
-        width: 180px;
-        border-radius: 3px;
-        align-self: center;
-    }       
-    .c-c{
+    &__image {
+        padding: 3px;
+
+        &--cover-image {
+            height: 320px;
+            width: 250px;
+            border-radius: 3px;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                transition: 0.3s ease-in-out;
+                transform: translateY(0) scale(1.1);
+            }
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
         justify-content: center;
-        align-items: center;
-        align-content: center;
+
+        &--title {
+            color: $primarycolor;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        &--price {
+            color: green;
+            font-weight: bold;
+        }
+
+        &--author {
+            color: $primarycolor;
+            font-weight: bold;
+        }
+
+        &--pages {
+            color: $primarycolor;
+            font-weight: bold;
+        }
+
+        &--isbn {
+            color: $primarycolor;
+            font-weight: bold;
+        }
+    }
+
+    &__cart-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 10px 0px;
+
+        &--btn{
+            background-color: $primarycolor;
+            color: white;
+            border: 0px;
+            border-radius: 3px;
+            padding: 5px 20px;
+            font-weight: 500;
+            &:hover{
+                transform: translateY(0) scale(1.1);
+                // background-color: $secondrycolor;
+                opacity: 0.9;
+            }
+        }
     }
 }
+
 @media screen and (max-width: 350px) {
-    
-    textarea{
+    textarea {
         resize: none;
         width: auto;
         margin-bottom: 20px;
-    }   
+    }
 }
