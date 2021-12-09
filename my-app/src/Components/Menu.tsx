@@ -1,27 +1,24 @@
 import './menu.style.scss'
 import * as constant from '../Constant/Constant'
 import { Link, useLocation } from "react-router-dom";
-import Home from './Home/Home';
-import Order from './Order/Order';
-import Cart from './Cart/Cart';
 
 const Menu = () => {
     const location = useLocation();
     const { pathname } = location;
     const splitLocation = pathname.split("/");
     console.log(splitLocation[1]);
-    
+
     return (
         <>
-            <div className="menu">
-                <div className="nav">
-                    <label htmlFor="appNameTitle" className="app-name">{constant.APP_NAME}</label>
-                    <ul className="nav--list">
-                        <li key="home"><Link to="/" className={splitLocation[1] === "" ? "nav--active" : "nav--inactive"}>Home</Link></li>
-                        <li key="null1">|</li>
-                        <li key="order"><Link to="/Order" className={splitLocation[1] === "Order" ? "nav--active" : "nav--inactive"}>Order</Link></li>
-                        <li key="null2">|</li>
-                        <li key="cart"><Link to="/Cart" className={splitLocation[1] === "Cart" ? "nav--active" : "nav--inactive"}>Cart</Link></li>
+            <div className="nav">
+                <div className="nav__logo">
+                    <label htmlFor="appNameTitle" className="nav__logo--style">{constant.APP_NAME}</label>
+                </div>
+                <div>
+                    <ul className="nav__list">
+                        <li key="home" className={splitLocation[1] === "" ? "nav__list--active" : "nav__list--inactive"}><Link to="/">Home</Link></li>
+                        <li key="order" className={splitLocation[1] === "Order" ? "nav__list--active" : "nav__list--inactive"}><Link to="/Order" >Order</Link></li>
+                        <li key="cart" className={splitLocation[1] === "Cart" ? "nav__list--active" : "nav__list--inactive"}><Link to="/Cart">Cart</Link></li>
                     </ul>
                 </div>
             </div>
