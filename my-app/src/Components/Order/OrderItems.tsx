@@ -5,11 +5,12 @@ interface PropType {
     items: Item[];
 }
 const OrderItems = ({ items }: PropType) => {
+    const randomKey=Math.random().toString();
     return (
         <>
             {
                 items?.map(item => (
-                    <div className="row" id={item.id.toString()+1}>
+                    <div className="row" id={item.id.toString()+randomKey}>
                         <div className="col flex-container-row">
                             <img src={item.cover_image} className="flex-item img" alt={item.title}/>
                             <div className="flex-container-column">
