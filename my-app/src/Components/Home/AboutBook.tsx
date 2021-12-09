@@ -18,10 +18,8 @@ const AboutBook = () => {
                     <button className="about-book__cart-buttons--btn">Add to Cart</button>
                     <button className="about-book__cart-buttons--btn">Buy Now</button>
                 </div>
-                <div className="">
-                    <textarea name="description" id="bookDescription" className="" disabled>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates provident nam distinctio harum? Atque voluptates impedit quasi rerum, doloribus, asperiores iusto fugiat assumenda ut inventore voluptatibus quae quidem repellat perferendis!
-                    </textarea>
+                <div className="about-book__description">
+                    <p className="about-book__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto libero fugit sint animi dolore accusamus magnam delectus temporibus voluptates sunt explicabo aliquam quis, maxime minima quibusdam perferendis porro voluptate deleniti!</p>                    
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ $secondrycolor:rgba(29, 158, 29, 0.8);
     margin: 20px 20px;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 
     &__image {
         padding: 3px;
@@ -73,12 +74,18 @@ $secondrycolor:rgba(29, 158, 29, 0.8);
             }
         }
     }
+    &__description{
+        width: 260px;
+        word-break: break-all;
+        word-wrap: normal;
+        &--para{
+            font-size: small;
+        }
+    }
 }
 
-@media screen and (max-width: 350px) {
-    textarea {
-        resize: none;
-        width: auto;
-        margin-bottom: 20px;
+@media screen and (max-width: 670px) {
+    .about-book {
+        justify-content: center;
     }
 }
